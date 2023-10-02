@@ -12,6 +12,6 @@ TASK_STATUS=0
 
 envsubst < assume-role-policy.template > assume-role-policy
 
-createRole ${ROLE_NAME} assume-role-policy.template
+createRole ${ROLE_NAME} assume-role-policy
 
 saveTaskStatus ${TASK_STATUS} ${ACTIVITY_SUB_TASK_CODE}
