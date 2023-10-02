@@ -7,7 +7,7 @@ ENV SLEEP_DURATION 5s
 ENV ROLE_NAME buildpiper
 
 ENV ACTIVITY_SUB_TASK_CODE AWS_IAM_ROLE_CREATOR 
-ENV WHITELIST_ARN "arn:aws:iam::403223234871:role/buildpiper"
+ENV WHITELIST_ARN "arn:aws:iam::403223234871:role/jm-dsprod-backend-services"
 ENV AWS_PAGER ""
 
 COPY build.sh .
