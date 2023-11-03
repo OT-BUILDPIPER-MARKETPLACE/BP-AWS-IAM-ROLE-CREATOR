@@ -10,6 +10,7 @@ sleep  $SLEEP_DURATION
 
 TASK_STATUS=0
 
+getAssumeRole ${AWS_ASSUME_ROLE_ARN}
 ROLE_EXISTS=`roleExists ${ROLE_NAME}`
 
 if [ "$ROLE_EXISTS" -eq 0 ]
